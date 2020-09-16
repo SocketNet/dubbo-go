@@ -87,6 +87,7 @@ func (f *FileConditionRouter) URL() common.URL {
 		}
 		if len(ver) > 0 {
 			f.url.AddParam(constant.VERSION_KEY, ver)
+			f.url.AddParam(constant.VERSION_DEFAULT_KEY, ver)
 		}
 		if len(srv) > 0 {
 			f.url.AddParam(constant.INTERFACE_KEY, srv)
