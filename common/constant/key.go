@@ -24,7 +24,7 @@ const (
 const (
 	PORT_KEY               = "port"
 	GROUP_KEY              = "group"
-	VERSION_KEY            = "version"
+	VERSION_KEY            = "default.version"
 	VERSION_DEFAULT_KEY    = "default.version"
 	INTERFACE_KEY          = "interface"
 	PATH_KEY               = "path"
