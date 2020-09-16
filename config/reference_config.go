@@ -202,6 +202,7 @@ func (c *ReferenceConfig) getUrlMap() url.Values {
 	urlMap.Set(constant.RETRIES_KEY, c.Retries)
 	urlMap.Set(constant.GROUP_KEY, c.Group)
 	urlMap.Set(constant.VERSION_DEFAULT_KEY, c.Version)
+	urlMap.Set(constant.VERSION_KEY, c.Version)
 	urlMap.Set(constant.GENERIC_KEY, strconv.FormatBool(c.Generic))
 	urlMap.Set(constant.ROLE_KEY, strconv.Itoa(common.CONSUMER))
 	urlMap.Set(constant.PROVIDER_BY, c.ProvideBy)
