@@ -108,6 +108,7 @@ func (ef *AccessLogFilter) buildAccessLogData(_ protocol.Invoker, invocation pro
 	dataMap[constant.INTERFACE_KEY] = attachments[constant.INTERFACE_KEY]
 	dataMap[constant.METHOD_KEY] = invocation.MethodName()
 	dataMap[constant.VERSION_KEY] = attachments[constant.VERSION_KEY]
+	dataMap[constant.VERSION_DEFAULT_KEY] = attachments[constant.VERSION_KEY]
 	dataMap[constant.GROUP_KEY] = attachments[constant.GROUP_KEY]
 	dataMap[constant.TIMESTAMP_KEY] = time.Now().Format(MessageDateLayout)
 	dataMap[constant.LOCAL_ADDR], _ = attachments[constant.LOCAL_ADDR]

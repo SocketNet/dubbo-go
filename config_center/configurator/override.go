@@ -82,6 +82,7 @@ func (c *overrideConfigurator) configureIfMatchInternal(url *common.URL) {
 		conditionKeys.Add(constant.ENABLED_KEY)
 		conditionKeys.Add(constant.GROUP_KEY)
 		conditionKeys.Add(constant.VERSION_KEY)
+		conditionKeys.Add(constant.VERSION_DEFAULT_KEY)
 		conditionKeys.Add(constant.APPLICATION_KEY)
 		conditionKeys.Add(constant.SIDE_KEY)
 		conditionKeys.Add(constant.CONFIG_VERSION_KEY)
