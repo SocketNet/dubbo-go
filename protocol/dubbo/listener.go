@@ -270,7 +270,6 @@ func (h *RpcServerHandler) OnMessage(session getty.Session, pkg interface{}) {
 		common.WithParamsValue(constant.GROUP_KEY, p.Service.Group),
 		common.WithParamsValue(constant.INTERFACE_KEY, p.Service.Interface),
 		common.WithParamsValue(constant.VERSION_KEY, p.Service.Version),
-		common.WithParamsValue(constant.VERSION_DEFAULT_KEY, p.Service.Version))
 	exporter, _ := dubboProtocol.ExporterMap().Load(u.ServiceKey())
 	if exporter == nil {
 		err := fmt.Errorf("don't have this exporter, key: %s", u.ServiceKey())
